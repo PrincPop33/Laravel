@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-/* 
+
 Route::post('login', [\App\Http\Controllers\UserController::class, 'login']);
 Route::post('register', [\App\Http\Controllers\UserController::class, 'register']);
 
@@ -25,4 +25,4 @@ Route::middleware('auth:sanctum')->group( function () {
     Route::resource('polovi', \App\Http\Controllers\PolController::class);
     Route::resource('proizvodjaci', \App\Http\Controllers\ProizvodjacController::class);
     Route::resource('satovi', \App\Http\Controllers\SatController::class);
-}); */
+});
